@@ -8,15 +8,15 @@
 </head>
 <body>
     <div class="filter-form">
-        <h1>Charlas - La Universidad abre sus puertas</h1>
+        <h1>LA UNIVERSIDAD ABRE SUS PUERTAS - AGENDA</h1>
         <form id="filterForm">
             <label for="area">Área:</label>
-            <select id="area" name="area" onchange="actualizarCharlasYHorarios()">
-                <option value="">Seleccione un área</option>
-                <option value="ciencias">Ciencias</option>
-                <option value="ingenieria">Ingeniería</option>
-                <option value="artes">Artes</option>
-                <option value="humanidades">Humanidades</option>
+            <select id="area" name="area" onchange="actualizarCharlas()">
+                <option value="">Seleccione un área - Depto</option>
+                <option value="Básicas">Básicas</option>
+                <option value="Civil">Civil</option>
+                <option value="Eléctrica">Eléctrica</option>
+                <option value="Ingreso">Ingreso</option>
                 <!-- Agrega más áreas según sea necesario -->
             </select>
 
@@ -25,12 +25,7 @@
                 <option value="">Seleccione una charla</option>
             </select>
 
-            <label for="horario">Horario:</label>
-            <select id="horario" name="horario" disabled>
-                <option value="">Seleccione un horario</option>
-            </select>
-
-            <button type="button" onclick="filtrarCharlas()">Filtrar</button>
+            <button type="button" onclick="filtrarCharlas()">Buscar</button>
         </form>
     </div>
 
