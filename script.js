@@ -1,28 +1,24 @@
 const charlas = [
-    { area: 'ciencias', charla: 'Física Cuántica', horario: '10:00 - 12:00', aula: 'Aula 1', descripcion: 'Introducción a los principios de la física cuántica.' },
-    { area: 'ingenieria', charla: 'Introducción a la Robótica', horario: '12:00 - 14:00', aula: 'Aula 2', descripcion: 'Fundamentos y aplicaciones de la robótica.' },
-    { area: 'artes', charla: 'Historia del Arte', horario: '14:00 - 16:00', aula: 'Aula 3', descripcion: 'Un recorrido por las principales corrientes artísticas.' },
-    { area: 'humanidades', charla: 'Filosofía Moderna', horario: '16:00 - 18:00', aula: 'Aula 4', descripcion: 'Exploración de las ideas y pensadores modernos.' },
+    { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horarios: ['15:20 - 15:40'], aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
+    { area: 'Civil', charla: 'Lab. de Informática', horarios: ['16:00 - 16:20'], aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentales para Diseño, Dibujo y Cálculo.' },
+    { area: 'Eléctrica', charla: 'Captura y visualización de datos para sistemas de generación de Energías Renovables', horarios: ['16:30 - 16:50'], aula: '017', descripcion: 'Sin descripción' },
+    { area: 'Ingreso', charla: 'Arduino', horarios: ['16:00 - 16:20', '17:00 - 17:20'], aula: 'SUM', descripcion: 'Tablero de juegos, Simón dice, Sensor de CO, Sensor de movimiento' },
     // Agrega más charlas según sea necesario
 ];
 
-function actualizarCharlasYHorarios() {
+function actualizarCharlas() {
     const area = document.getElementById('area').value;
     const charlaSelect = document.getElementById('charla');
-    const horarioSelect = document.getElementById('horario');
 
     charlaSelect.innerHTML = '<option value="">Seleccione una charla</option>';
-    horarioSelect.innerHTML = '<option value="">Seleccione un horario</option>';
 
     if (area === "") {
         charlaSelect.disabled = true;
-        horarioSelect.disabled = true;
         return;
     }
 
     const charlasFiltradas = charlas.filter(c => c.area === area);
     const charlasUnicas = [...new Set(charlasFiltradas.map(c => c.charla))];
-    const horariosUnicos = [...new Set(charlasFiltradas.map(c => c.horario))];
 
     charlasUnicas.forEach(charla => {
         const option = document.createElement('option');
@@ -31,26 +27,16 @@ function actualizarCharlasYHorarios() {
         charlaSelect.appendChild(option);
     });
 
-    horariosUnicos.forEach(horario => {
-        const option = document.createElement('option');
-        option.value = horario;
-        option.textContent = horario;
-        horarioSelect.appendChild(option);
-    });
-
     charlaSelect.disabled = false;
-    horarioSelect.disabled = false;
 }
 
 function filtrarCharlas() {
     const area = document.getElementById('area').value;
     const charla = document.getElementById('charla').value;
-    const horario = document.getElementById('horario').value;
 
     const resultados = charlas.filter(c => {
         return (area === "" || c.area === area) &&
-               (charla === "" || c.charla === charla) &&
-               (horario === "" || c.horario === horario);
+               (charla === "" || c.charla === charla);
     });
 
     mostrarResultados(resultados);
@@ -67,12 +53,14 @@ function mostrarResultados(resultados) {
         cell.textContent = 'No se encontraron resultados.';
     } else {
         resultados.forEach(r => {
-            const row = tableBody.insertRow();
-            row.insertCell(0).textContent = r.area;
-            row.insertCell(1).textContent = r.charla;
-            row.insertCell(2).textContent = r.horario;
-            row.insertCell(3).textContent = r.aula;
-            row.insertCell(4).textContent = r.descripcion;
+            r.horarios.forEach(horario => {
+                const row = tableBody.insertRow();
+                row.insertCell(0).textContent = r.area;
+                row.insertCell(1).textContent = r.charla;
+                row.insertCell(2).textContent = horario;
+                row.insertCell(3).textContent = r.aula;
+                row.insertCell(4).textContent = r.descripcion;
+            });
         });
     }
 }
