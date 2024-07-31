@@ -37,3 +37,46 @@ function actualizarCharlasYHorarios() {
         option.textContent = horario;
         horarioSelect.appendChild(option);
     });
+
+    charlaSelect.disabled = false;
+    horarioSelect.disabled = false;
+}
+
+function filtrarCharlas() {
+    const area = document.getElementById('area').value;
+    const charla = document.getElementById('charla').value;
+    const horario = document.getElementById('horario').value;
+
+    const resultados = charlas.filter(c => {
+        return (area === "" || c.area === area) &&
+               (charla === "" || c.charla === charla) &&
+               (horario === "" || c.horarios.includes(horario));
+    });
+
+    mostrarResultados(resultados, horario);
+}
+
+function mostrarResultados(resultados, filtroHorario) {
+    const tableBody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = '';
+
+    if (resultados.length === 0) {
+        const row = tableBody.insertRow();
+        const cell = row.insertCell(0);
+        cell.colSpan = 5;
+        cell.textContent = 'No se encontraron resultados.';
+    } else {
+        resultados.forEach(r => {
+            r.horarios.forEach(horario => {
+                if (filtroHorario === "" || horario === filtroHorario) {
+                    const row = tableBody.insertRow();
+                    row.insertCell(0).textContent = r.area;
+                    row.insertCell(1).textContent = r.charla;
+                    row.insertCell(2).textContent = horario;
+                    row.insertCell(3).textContent = r.aula;
+                    row.insertCell(4).textContent = r.descripcion;
+                }
+            });
+        });
+    }
+}
