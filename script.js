@@ -94,5 +94,5 @@ function mostrarMensajeInicial() {
     const row = tableBody.insertRow();
     const cell = row.insertCell(0);
     cell.colSpan = 5;
-    cell.textContent = 'Busca la información que necesitas utilizando los filtros de arriba.';
+    cell.textContent = 'Encontrá la información que necesitas utilizando los filtros de la parte superior.';
 }
