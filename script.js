@@ -6,19 +6,23 @@ const charlas = [
     // Agrega más charlas según sea necesario
 ];
 
-function actualizarCharlas() {
+function actualizarCharlasYHorarios() {
     const area = document.getElementById('area').value;
     const charlaSelect = document.getElementById('charla');
+    const horarioSelect = document.getElementById('horario');
 
     charlaSelect.innerHTML = '<option value="">Seleccione una charla</option>';
+    horarioSelect.innerHTML = '<option value="">Seleccione un horario</option>';
 
     if (area === "") {
         charlaSelect.disabled = true;
+        horarioSelect.disabled = true;
         return;
     }
 
     const charlasFiltradas = charlas.filter(c => c.area === area);
     const charlasUnicas = [...new Set(charlasFiltradas.map(c => c.charla))];
+    const horariosUnicos = [...new Set(charlasFiltradas.flatMap(c => c.horarios))];
 
     charlasUnicas.forEach(charla => {
         const option = document.createElement('option');
@@ -27,22 +31,32 @@ function actualizarCharlas() {
         charlaSelect.appendChild(option);
     });
 
+    horariosUnicos.forEach(horario => {
+        const option = document.createElement('option');
+        option.value = horario;
+        option.textContent = horario;
+        horarioSelect.appendChild(option);
+    });
+
     charlaSelect.disabled = false;
+    horarioSelect.disabled = false;
 }
 
 function filtrarCharlas() {
     const area = document.getElementById('area').value;
     const charla = document.getElementById('charla').value;
+    const horario = document.getElementById('horario').value;
 
     const resultados = charlas.filter(c => {
         return (area === "" || c.area === area) &&
-               (charla === "" || c.charla === charla);
+               (charla === "" || c.charla === charla) &&
+               (horario === "" || c.horarios.includes(horario));
     });
 
-    mostrarResultados(resultados);
+    mostrarResultados(resultados, horario);
 }
 
-function mostrarResultados(resultados) {
+function mostrarResultados(resultados, filtroHorario) {
     const tableBody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
     tableBody.innerHTML = '';
 
@@ -54,12 +68,14 @@ function mostrarResultados(resultados) {
     } else {
         resultados.forEach(r => {
             r.horarios.forEach(horario => {
-                const row = tableBody.insertRow();
-                row.insertCell(0).textContent = r.area;
-                row.insertCell(1).textContent = r.charla;
-                row.insertCell(2).textContent = horario;
-                row.insertCell(3).textContent = r.aula;
-                row.insertCell(4).textContent = r.descripcion;
+                if (filtroHorario === "" || horario === filtroHorario) {
+                    const row = tableBody.insertRow();
+                    row.insertCell(0).textContent = r.area;
+                    row.insertCell(1).textContent = r.charla;
+                    row.insertCell(2).textContent = horario;
+                    row.insertCell(3).textContent = r.aula;
+                    row.insertCell(4).textContent = r.descripcion;
+                }
             });
         });
     }
