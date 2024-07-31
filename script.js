@@ -1,4 +1,3 @@
-
 const charlas = [
     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '15:20 - 15:40', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
     { area: 'Civil', charla: 'Lab. de Informática ', horario: '16:00 - 16:20', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
