@@ -1,4 +1,4 @@
-cconst charlas = [
+const charlas = [
     /*Solo para que quede el horario acomodado*/
      { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '14:50 - 15:10', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
      { area: 'Básicas', charla: 'Péndulo Balístico', horario: '15:20 - 15:40', aula: 'Lab Física I', descripcion: 'Determinación de la rapidez de lanzamiento de un proyectil por medio de un péndulo balístico.' },
