@@ -80,7 +80,7 @@ const charlas = [
     
     { area: 'Secretaría de Asuntos Universitarios', charla: 'Becas, Intercambios y Deportes', horario: '15:20 - 15:40', aula: 'Aula: 213', descripcion: 'Becas, Intercambios y Deportes' },   
     { area: 'Secretaría de Asuntos Universitarios', charla: 'Becas, Intercambios y Deportes', horario: '16:30 - 16:50', aula: 'Aula: 213', descripcion: 'Becas, Intercambios y Deportes' }, 
-    { area: 'Secretaría de Asuntos Universitarios', charla: 'Becas, Intercambios y Deportes', horario: '17:00 - 17:30', aula: 'Aula: 213', descripcion: 'Becas, Intercambios y Deportes' },
+    { area: 'Secretaría de Asuntos Universitarios', charla: 'Becas, Intercambios y Deportes', horario: '17:00 - 17:20', aula: 'Aula: 213', descripcion: 'Becas, Intercambios y Deportes' },
     
  /*SISTEMAS*/   
 
