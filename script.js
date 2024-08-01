@@ -16,6 +16,9 @@ const charlas = [
     { area: 'Básicas', charla: 'Introducción al diseño 3D', horario: '15:20 - 15:40', aula: 'Lab Física 1', descripcion: 'Introducción al diseño 3D' },
     { area: 'Básicas', charla: 'Introducción al diseño 3D', horario: '16:30 - 16:50', aula: 'Lab Física 1', descripcion: 'Introducción al diseño 3D' },
     { area: 'Básicas', charla: 'Introducción al diseño 3D', horario: '17:30 - 17:50', aula: 'Lab Física 1', descripcion: 'Introducción al diseño 3D' },
+    { area: 'Básicas', charla: 'Generador de Van de Graaff ', horario: '14:50 - 15:10', aula: 'Lab Física II', descripcion: 'Experiencia en el Laboratorio de Física II.' },
+    { area: 'Básicas', charla: 'Generador de Van de Graaff ', horario: '16:00 - 16:20', aula: 'Lab Física II', descripcion: 'Experiencia en el Laboratorio de Física II.' },
+    { area: 'Básicas', charla: 'Generador de Van de Graaff ', horario: '17:00 - 17:20', aula: 'Lab Física II', descripcion: 'Experiencia en el Laboratorio de Física II.' },
 
 /*CIVIL*/
     
