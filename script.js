@@ -1,16 +1,20 @@
 const charlas = [
+    /*Solo para que quede el horario acomodado*/
+     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '14:50 - 15:10', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
+     { area: 'Básicas', charla: 'Péndulo Balístico', horario: '15:20 - 15:40', aula: 'Lab Física I', descripcion: 'Determinación de la rapidez de lanzamiento de un proyectil por medio de un péndulo balístico.' },
+     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '16:00 - 16:20', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
+     { area: 'Básicas', charla: 'Péndulo Balístico', horario: '16:30 - 16:50', aula: 'Lab Física I', descripcion: 'Determinación de la rapidez de lanzamiento de un proyectil por medio de un péndulo balístico.' },
+     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '17:00 - 17:20', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
+     { area: 'Básicas', charla: 'Visualización de Carga y descarga de un capacitor', horario: '17:30 - 17:50', aula: 'Lab Física 2', descripcion: 'Experiencia en el Laboratorio de Física II.' },
+    
     /*BÁSICAS*/
     
-    { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '14:50 - 15:10', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
+   
     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '16:00 - 16:20', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
-    { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '17:00 - 17:20', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
-    { area: 'Básicas', charla: 'Péndulo Balístico', horario: '15:20 - 15:40', aula: 'Lab Física I', descripcion: 'Determinación de la rapidez de lanzamiento de un proyectil por medio de un péndulo balístico.' },
     { area: 'Básicas', charla: 'Péndulo Balístico', horario: '16:00 - 16:20', aula: 'Lab Física I', descripcion: 'Determinación de la rapidez de lanzamiento de un proyectil por medio de un péndulo balístico.' },
-    { area: 'Básicas', charla: 'Péndulo Balístico', horario: '16:30 - 16:50', aula: 'Lab Física I', descripcion: 'Determinación de la rapidez de lanzamiento de un proyectil por medio de un péndulo balístico.' },
     { area: 'Básicas', charla: 'Péndulo Balístico', horario: '17:00 - 17:20', aula: 'Lab Física I', descripcion: 'Determinación de la rapidez de lanzamiento de un proyectil por medio de un péndulo balístico.' },
     { area: 'Básicas', charla: 'Visualización de Carga y descarga de un capacitor', horario: '15:20 - 15:40', aula: 'Lab Física 2', descripcion: 'Experiencia en el Laboratorio de Física II.' },
     { area: 'Básicas', charla: 'Visualización de Carga y descarga de un capacitor', horario: '16:30 - 16:50', aula: 'Lab Física 2', descripcion: 'Experiencia en el Laboratorio de Física II.' },
-    { area: 'Básicas', charla: 'Visualización de Carga y descarga de un capacitor', horario: '17:30 - 17:50', aula: 'Lab Física 2', descripcion: 'Experiencia en el Laboratorio de Física II.' },
     { area: 'Básicas', charla: 'Introducción al diseño 3D', horario: '15:20 - 15:40', aula: 'Lab Física 1', descripcion: 'Introducción al diseño 3D' },
     { area: 'Básicas', charla: 'Introducción al diseño 3D', horario: '16:30 - 16:50', aula: 'Lab Física 1', descripcion: 'Introducción al diseño 3D' },
     { area: 'Básicas', charla: 'Introducción al diseño 3D', horario: '17:30 - 17:50', aula: 'Lab Física 1', descripcion: 'Introducción al diseño 3D' },
