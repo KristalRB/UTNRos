@@ -55,7 +55,7 @@ const charlas = [
 /*MECANICA*/ 
     
     { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica en el Agro', horario: '17:00 - 17:20', aula: '210', descripcion: 'Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.' },
-    { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica en el Agro', horario: '17:30 - 17:50', aula: '210', descripcion: 'Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.' },
+   /* { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica en el Agro', horario: '17:30 - 17:50', aula: '210', descripcion: 'Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.' },
     { area: 'Ingenería Mecánica', charla: 'Cadena de valor de la ingeniería mecánica', horario: '16:00 - 16:50', aula: '210', descripcion: 'Descripción de todas las actividades y procesos involucrados en la creación de productos mecánicos, desde la concepción hasta la entrega final al cliente. Actividades reservadas.' },
     { area: 'Ingenería Mecánica', charla: 'Perfil del Profesional de Ingeniería Mecánica', horario: '14:50 - 15:10', aula: 'Salón de Actos (Subsuelo)', descripcion: 'Presentación de la carrera de Ingeniería Mecánica. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Mecánica. Actividades reservadas.Título intermedio.' },   
     { area: 'Ingenería Mecánica', charla: 'Perfil del Profesional de Ingeniería Mecánica', horario: '16:30 - 16:50', aula: 'Salón de Actos (Subsuelo)', descripcion: 'Presentación de la carrera de Ingeniería Mecánica. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Mecánica. Actividades reservadas.Título intermedio.' }, 
@@ -63,7 +63,7 @@ const charlas = [
     { area: 'Ingenería Mecánica', charla: 'Industria 4.0', horario: '16:00 - 16:50', aula: '216', descripcion: 'Industria 4.0' },
     { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica a través del microscopio', horario: '15:20 - 15:40', aula: 'Lab Mecánica (2do Piso)', descripcion: '' },   
     { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica a través del microscopio', horario: '16:00 - 16:20', aula: 'Lab Mecánica (2do Piso)', descripcion: '' }, 
-    { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica a través del microscopio', horario: '16:30 - 16:50', aula: 'Lab Mecánica (2do Piso)', descripcion: '' },
+    { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica a través del microscopio', horario: '16:30 - 16:50', aula: 'Lab Mecánica (2do Piso)', descripcion: '' }, */
 
     
 /*QUÍMICA*/    
