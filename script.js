@@ -109,6 +109,7 @@ function actualizarCharlasYHorarios() {
 
     const charlasFiltradas = charlas.filter(c => c.area === area);
     const charlasUnicas = [...new Set(charlasFiltradas.map(c => c.charla))];
+    const horariosUnicos = [...new Set(charlasFiltradas.map(c => c.horario))].sort((a, b) => a.localeCompare(b));
 
     charlasUnicas.forEach(charla => {
         const option = document.createElement('option');
@@ -144,6 +145,7 @@ function mostrarResultados(resultados) {
         cell.colSpan = 5;
         cell.textContent = 'No se encontraron resultados.';
     } else {
+        resultados.sort((a, b) => a.horario.localeCompare(b.horario));
         resultados.forEach(r => {
             const row = tableBody.insertRow();
             row.insertCell(0).textContent = r.area;
