@@ -125,3 +125,71 @@ function actualizarCharlasYHorarios() {
 
     charlaSelect.disabled = false;
 }
+
+function filtrarCharlas() {
+    const area = document.getElementById('area').value;
+    const charla = document.getElementById('charla').value;
+    const horario = document.getElementById('horario').value;
+
+    const resultados = charlas.filter(c => {
+        return (area === "" || c.area === area) &&
+               (charla === "" || c.charla === charla) &&
+               (horario === "" || c.horario === horario);
+    });
+
+    mostrarResultados(resultados);
+}
+
+function mostrarResultados(resultados) {
+    const tableBody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = '';
+
+    if (resultados.length === 0) {
+        const row = tableBody.insertRow();
+        const cell = row.insertCell(0);
+        cell.colSpan = 5;
+        cell.textContent = 'No se encontraron resultados.';
+    } else {
+        resultados.sort((a, b) => a.horario.localeCompare(b.horario));
+        resultados.forEach(r => {
+            const row = tableBody.insertRow();
+            row.insertCell(0).textContent = r.area;
+            row.insertCell(1).textContent = r.charla;
+            row.insertCell(2).textContent = r.horario;
+            row.insertCell(3).textContent = r.aula;
+            row.insertCell(4).textContent = r.descripcion;
+        });
+    }
+}
+
+// Inicializa los horarios cuando se carga la página
+window.onload = function() {
+    actualizarHorarios();
+    mostrarMensajeInicial();
+};
+
+function actualizarHorarios() {
+    const horarioSelect = document.getElementById('horario');
+    const horariosUnicos = [...new Set(charlas.map(c => c.horario))];
+
+    horarioSelect.innerHTML = '<option value="">Seleccione un horario</option>';
+
+    horariosUnicos.forEach(horario => {
+        const option = document.createElement('option');
+        option.value = horario;
+        option.textContent = horario;
+        horarioSelect.appendChild(option);
+    });
+
+    horarioSelect.disabled = false;
+}
+
+function mostrarMensajeInicial() {
+    const tableBody = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = '';
+
+    const row = tableBody.insertRow();
+    const cell = row.insertCell(0);
+    cell.colSpan = 5;
+    cell.textContent = 'Encontrá la información que necesitas utilizando los filtros de la parte superior.';
+}
