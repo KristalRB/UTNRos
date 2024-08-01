@@ -16,22 +16,22 @@ const charlas = [
 
 /*CIVIL*/
     
-    { area: 'Civil', charla: 'Lab. de Informática ', horario: '16:00 - 16:20', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
-    { area: 'Civil', charla: 'Lab. de Informática ', horario: '17:30 - 17:50', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
-    { area: 'Civil', charla: 'Lab. de Informática ', horario: '16:30 - 16:50', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
-    { area: 'Civil', charla: 'Lab. de Informática ', horario: '17:00 - 17:20', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
-    { area: 'Civil', charla: 'Lab. de Hidráulica  ', horario: '15:20 - 15:50', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
-    { area: 'Civil', charla: 'Lab. de Hidráulica  ', horario: '16:00 - 16:20', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
-    { area: 'Civil', charla: 'Lab. de Hidráulica  ', horario: '16:30 - 16:50', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
-    { area: 'Civil', charla: 'Lab. de Hidráulica  ', horario: '17:00 - 17:20', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
-    { area: 'Civil', charla: 'Lab. de ensayos', horario: '15:20 - 15:50', aula: 'Laboratorio IC- Anexo I', descripcion: 'Ensayo de tracción en barra de acero y en probeta de hormigón' },
-    { area: 'Civil', charla: 'Lab. de ensayos', horario: '16:00 - 16:20', aula: 'Laboratorio IC- Anexo I', descripcion: 'Ensayo de tracción en barra de acero y en probeta de hormigón' },
-    { area: 'Civil', charla: ' Perfil del profesional de la Ingeniería Civil', horario: '14:50 - 15:10', aula: 'Anfiteatro', descripcion: 'Presentación de la carrera de Ingeniería Civil. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Civil. Actividades reservadas.' },
-    { area: 'Civil', charla: ' Perfil del profesional de la Ingeniería Civil', horario: '15:20 - 15:40', aula: 'Anfiteatro', descripcion: 'Presentación de la carrera de Ingeniería Civil. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Civil. Actividades reservadas.' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Informática ', horario: '16:00 - 16:20', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Informática ', horario: '17:30 - 17:50', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Informática ', horario: '16:30 - 16:50', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Informática ', horario: '17:00 - 17:20', aula: 'Anfiteatro', descripcion: 'Se presentaran los Sofware que maneja un ingeniero civil a lo largo de su profesión. Herramienta fundamentas para Diseño, Dibujo y Calculo. ' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Hidráulica  ', horario: '15:20 - 15:50', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Hidráulica  ', horario: '16:00 - 16:20', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Hidráulica  ', horario: '16:30 - 16:50', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de Hidráulica  ', horario: '17:00 - 17:20', aula: 'Laboratorio IC- Anexo I', descripcion: 'Canal Hidráulico' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de ensayos', horario: '15:20 - 15:50', aula: 'Laboratorio IC- Anexo I', descripcion: 'Ensayo de tracción en barra de acero y en probeta de hormigón' },
+    { area: 'Ingeniería Civil', charla: 'Lab. de ensayos', horario: '16:00 - 16:20', aula: 'Laboratorio IC- Anexo I', descripcion: 'Ensayo de tracción en barra de acero y en probeta de hormigón' },
+    { area: 'Ingeniería Civil', charla: ' Perfil del profesional de la Ingeniería Civil', horario: '14:50 - 15:10', aula: 'Anfiteatro', descripcion: 'Presentación de la carrera de Ingeniería Civil. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Civil. Actividades reservadas.' },
+    { area: 'Ingeniería Civil', charla: ' Perfil del profesional de la Ingeniería Civil', horario: '15:20 - 15:40', aula: 'Anfiteatro', descripcion: 'Presentación de la carrera de Ingeniería Civil. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Civil. Actividades reservadas.' },
  
 /*ELECTRICA*/
-  {area: 'Eléctrica', charla: 'Captura y visualización de datos para sistemas de generación de Energías Renovables', horario: '16:00 - 16:50', aula: '017', descripcion: 'Sin descripción' },
-  {area: 'Eléctrica', charla: ' Perfil del profesional de la Ingeniería en Energía Eléctrica', horario: '15:20 - 15:40', aula: '017', descripcion: 'Sin descripción' },
+  {area: 'Ingeniería en Energía Eléctrica', charla: 'Captura y visualización de datos para sistemas de generación de Energías Renovables', horario: '16:00 - 16:50', aula: '017', descripcion: 'Sin descripción' },
+  {area: 'Ingeniería en Energía Eléctrica', charla: ' Perfil del profesional de la Ingeniería en Energía Eléctrica', horario: '15:20 - 15:40', aula: '017', descripcion: 'Sin descripción' },
     
 /*INGRESO*/    
     
