@@ -1,5 +1,6 @@
 const charlas = [
     /*BÁSICAS*/
+    
     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '14:50 - 15:10', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '16:00 - 16:20', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
     { area: 'Básicas', charla: 'Análisis de Fenómenos Ópticos', horario: '17:00 - 17:20', aula: 'Lab Física I', descripcion: 'Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.' },
@@ -30,6 +31,7 @@ const charlas = [
     { area: 'Ingeniería Civil', charla: ' Perfil del profesional de la Ingeniería Civil', horario: '15:20 - 15:40', aula: 'Anfiteatro', descripcion: 'Presentación de la carrera de Ingeniería Civil. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Civil. Actividades reservadas.' },
  
 /*ELECTRICA*/
+    
   {area: 'Ingeniería en Energía Eléctrica', charla: 'Captura y visualización de datos para sistemas de generación de Energías Renovables', horario: '16:00 - 16:50', aula: '017', descripcion: 'Sin descripción' },
   {area: 'Ingeniería en Energía Eléctrica', charla: ' Perfil del profesional de la Ingeniería en Energía Eléctrica', horario: '15:20 - 15:40', aula: '017', descripcion: 'Sin descripción' },
     
@@ -51,6 +53,7 @@ const charlas = [
     { area: 'Ingreso', charla: 'De la Realidad al Papel: La Magia de la Ingeniería en el Diseño y la Construcción', horario: '17:30 - 17:50', aula: '309', descripcion: '¿Alguna vez se preguntaron cómo pasan las ideas de nuestra mente al mundo real? ¿Cómo es posible que algo que solo imaginamos se convierta en un puente, un edificio o incluso una ciudad? En esta charla nos enfocamos en cómo los ingenieros toman ideas y necesidades del mundo real y las convierten en proyectos concretos a través de planos y diseños, y como esos diseños se transforman en estructuras que vemos y usamos todos los días.' },
 
 /*MECANICA*/ 
+    
     { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica en el Agro', horario: '17:00 - 17:20', aula: '210', descripcion: 'Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.' },
     { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica en el Agro', horario: '17:30 - 17:50', aula: '210', descripcion: 'Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.' },
     { area: 'Ingenería Mecánica', charla: 'Cadena de valor de la ingeniería mecánica', horario: '16:00 - 16:50', aula: '210', descripcion: 'Descripción de todas las actividades y procesos involucrados en la creación de productos mecánicos, desde la concepción hasta la entrega final al cliente. Actividades reservadas.' },
@@ -63,12 +66,14 @@ const charlas = [
     { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica a través del microscopio', horario: '16:30 - 16:50', aula: 'Lab Mecánica (2do Piso)', descripcion: '' },
 
     
-/*QUÍMICA*/     
+/*QUÍMICA*/    
+    
     { area: 'Ingenería Química', charla: 'Ingeniería Química ¿es lo que parece?', horario: '14:50 - 15:40', aula: '308', descripcion: 'Presentación de la carrera de ingeniería química, características generales del cursado y de la actividad profesional. Sabremos si hay diferencias entre ingenieros/as químicos/as y licenciados/as químicos/as y se brindarán más detalles sobre las funciones principales de los/as ingenieros/as químicos/as.¿Cómo se hace una reacción química? La química es la ciencia natural que estudia la composición, estructura y propiedades de la materia, así como también los cambios que esta experimenta durante las reacciones. Veremos un ejemplo de un cambio químico y como detectamos que la sustancia ha sufrido una modificación.' },   
     { area: 'Ingenería Química', charla: 'Ingeniería Química ¿es lo que parece?', horario: '16:00 - 16:50', aula: '308', descripcion: 'Presentación de la carrera de ingeniería química, características generales del cursado y de la actividad profesional. Sabremos si hay diferencias entre ingenieros/as químicos/as y licenciados/as químicos/as y se brindarán más detalles sobre las funciones principales de los/as ingenieros/as químicos/as.¿Cómo se hace una reacción química? La química es la ciencia natural que estudia la composición, estructura y propiedades de la materia, así como también los cambios que esta experimenta durante las reacciones. Veremos un ejemplo de un cambio químico y como detectamos que la sustancia ha sufrido una modificación.' }, 
     { area: 'Ingenería Química', charla: 'Ingeniería Química ¿es lo que parece?', horario: '17:00 - 17:50', aula: '308', descripcion: 'Presentación de la carrera de ingeniería química, características generales del cursado y de la actividad profesional. Sabremos si hay diferencias entre ingenieros/as químicos/as y licenciados/as químicos/as y se brindarán más detalles sobre las funciones principales de los/as ingenieros/as químicos/as.¿Cómo se hace una reacción química? La química es la ciencia natural que estudia la composición, estructura y propiedades de la materia, así como también los cambios que esta experimenta durante las reacciones. Veremos un ejemplo de un cambio químico y como detectamos que la sustancia ha sufrido una modificación.' },
 
 /*SAU*/
+    
     { area: 'Secretaría de Asuntos Universitarios', charla: 'Becas, Intercambios y Deportes', horario: '15:20 - 15:40', aula: '213', descripcion: 'Becas, Intercambios y Deportes' },   
     { area: 'Secretaría de Asuntos Universitarios', charla: 'Becas, Intercambios y Deportes', horario: '16:30 - 16:50', aula: '213', descripcion: 'Becas, Intercambios y Deportes' }, 
     { area: 'Secretaría de Asuntos Universitarios', charla: 'Becas, Intercambios y Deportes', horario: '17:00 - 17:30', aula: '213', descripcion: 'Becas, Intercambios y Deportes' },
