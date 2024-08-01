@@ -49,6 +49,8 @@ const charlas = [
     { area: 'Ingreso', charla: 'Charla sobre cómo es el curso de ingreso ', horario: '17:30 - 17:50', aula: 'SUM', descripcion: 'Charla' },
     { area: 'Ingreso', charla: 'De la Realidad al Papel: La Magia de la Ingeniería en el Diseño y la Construcción', horario: '16:00 - 16:20', aula: '309', descripcion: '¿Alguna vez se preguntaron cómo pasan las ideas de nuestra mente al mundo real? ¿Cómo es posible que algo que solo imaginamos se convierta en un puente, un edificio o incluso una ciudad? En esta charla nos enfocamos en cómo los ingenieros toman ideas y necesidades del mundo real y las convierten en proyectos concretos a través de planos y diseños, y como esos diseños se transforman en estructuras que vemos y usamos todos los días.' },
     { area: 'Ingreso', charla: 'De la Realidad al Papel: La Magia de la Ingeniería en el Diseño y la Construcción', horario: '17:30 - 17:50', aula: '309', descripcion: '¿Alguna vez se preguntaron cómo pasan las ideas de nuestra mente al mundo real? ¿Cómo es posible que algo que solo imaginamos se convierta en un puente, un edificio o incluso una ciudad? En esta charla nos enfocamos en cómo los ingenieros toman ideas y necesidades del mundo real y las convierten en proyectos concretos a través de planos y diseños, y como esos diseños se transforman en estructuras que vemos y usamos todos los días.' },
+
+/*MECANICA*/ 
     
     // Agrega más charlas según sea necesario
 ];
