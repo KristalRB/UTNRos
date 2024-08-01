@@ -51,7 +51,11 @@ const charlas = [
     { area: 'Ingreso', charla: 'De la Realidad al Papel: La Magia de la Ingeniería en el Diseño y la Construcción', horario: '17:30 - 17:50', aula: '309', descripcion: '¿Alguna vez se preguntaron cómo pasan las ideas de nuestra mente al mundo real? ¿Cómo es posible que algo que solo imaginamos se convierta en un puente, un edificio o incluso una ciudad? En esta charla nos enfocamos en cómo los ingenieros toman ideas y necesidades del mundo real y las convierten en proyectos concretos a través de planos y diseños, y como esos diseños se transforman en estructuras que vemos y usamos todos los días.' },
 
 /*MECANICA*/ 
-    
+    { area: 'Ingenería Mecánica', charla: 'La ingeniería mecánica en el Agro', horario: '17:00 - 17:50', aula: '210', descripcion: 'Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.' },
+    { area: 'Ingenería Mecánica', charla: 'Cadena de valor de la ingeniería mecánica', horario: '16:00 - 16:50', aula: '210', descripcion: 'Descripción de todas las actividades y procesos involucrados en la creación de productos mecánicos, desde la concepción hasta la entrega final al cliente. Actividades reservadas.' },
+    { area: 'Ingenería Mecánica', charla: 'Perfil del Profesional de Ingeniería Mecánica', horario: '14:50 - 15:10', aula: 'Salón de Actos (Subsuelo)', descripcion: 'Presentación de la carrera de Ingeniería Mecánica. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Mecánica. Actividades reservadas.Título intermedio.' },   
+    { area: 'Ingenería Mecánica', charla: 'Perfil del Profesional de Ingeniería Mecánica', horario: '16:30 - 16:50', aula: 'Salón de Actos (Subsuelo)', descripcion: 'Presentación de la carrera de Ingeniería Mecánica. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Mecánica. Actividades reservadas.Título intermedio.' }, 
+    { area: 'Ingenería Mecánica', charla: 'Industria 4.0', horario: '16:00 - 16:50', aula: '216', descripcion: 'Industria 4.0' },
     // Agrega más charlas según sea necesario
 ];
 
