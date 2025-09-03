@@ -45,7 +45,90 @@ body {
   text-shadow: 0 3px 6px rgba(0,0,0,0.4);
 }
 .hero p {
-  margin-top:
+  margin-top: 15px;
+  font-size: 1.3em;
+  opacity: 0.95;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Secciones */
+.card-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 15px;
+  animation: fadeIn 1.2s ease;
+}
+.card-container h2 {
+  color: #004080;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin: 15px 0;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 6px solid transparent;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  border-left: 6px solid #007bb5;
+  background: linear-gradient(135deg, #ffffff, #f1f9ff);
+}
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #007bb5;
+  font-size: 1.2em;
+}
+.card p {
+  margin: 4px 0;
+  font-size: 0.95em;
+  color: #333;
+}
+
+/* Charla expandible */
+.card .details {
+  display: none;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  animation: fadeIn 0.5s ease;
+}
+.card.expanded .details {
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #004080;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 60px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+}
+
+/* Hidden */
+.hidden { display: none; }
+
+/* Responsive */
+@media(max-width: 600px){
+  .card { padding: 14px; }
+  .hero h1 { font-size: 1.9em; }
+  .hero p { font-size: 1.05em; }
+}
 
 
 
