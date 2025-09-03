@@ -8,26 +8,38 @@ body {
     color: #333;
 }
 
-/* Hero */
+/* Hero con fondo */
 .hero {
+    position: relative;
     text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #004080, #007bb5);
+    padding: 80px 20px;
+    background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
     color: white;
 }
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 64, 128, 0.7); /* capa azul semitransparente */
+}
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+}
 .hero img {
-    max-height: 80px;
+    max-height: 90px;
     margin-bottom: 15px;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
 }
 .hero h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: 600;
 }
 .hero p {
-    margin-top: 10px;
-    font-size: 1.2em;
-    opacity: 0.9;
+    margin-top: 12px;
+    font-size: 1.3em;
+    opacity: 0.95;
 }
 
 /* Formulario */
@@ -119,5 +131,40 @@ footer {
     font-size: 0.9em;
     margin-top: 40px;
 }
+
+/* Responsive: tabla como tarjetas */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        background: #f9f9f9;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        padding: 12px;
+    }
+
+    td {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #004080;
+        flex-basis: 40%;
+        text-align: left;
+    }
+}
+
 
 
