@@ -3,9 +3,9 @@ const charlas = [
     {
         area: "Básicas",
         charla: "La Física en Ingeniería",
-        horario: "14:30 - Repetición: 15:00" 
+        horario: "14:30 - Repetición: 15:00" ,
         aula: "Lab Física 1 (4to Piso)",
-        descripcion: "Una mirada al papel esencial de la física en el pensamiento y la práctica ingenieril."
+        descripcion: "Una mirada al papel esencial de la física en el pensamiento y la práctica ingenieril.",
     },
      {
         area: "Básicas",
@@ -177,5 +177,6 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
