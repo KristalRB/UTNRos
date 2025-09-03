@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero -->
+
+    <!-- Hero con logo y título -->
     <header class="hero">
         <div class="hero-overlay">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/UTN_logo.svg/512px-UTN_logo.svg.png" alt="UTN Logo">
@@ -16,41 +17,17 @@
         </div>
     </header>
 
-    <!-- Filtros -->
-    <div class="filter-form">
-        <label class="info-text">Buscá por Área/Departamento las charlas, actividades o muestras que te interesen para ver horarios, aulas y descripciones.</label>
-        <form id="filterForm">
-            <select id="area" name="area" onchange="actualizarCharlasYHorarios()">
-                <option value="">Seleccione un área - Depto</option>
-                <option value="Básicas">Básicas</option>
-                <option value="Ingeniería Civil">Ingeniería Civil</option>
-                <option value="Ingeniería en Energía Eléctrica">Ingeniería en Energía Eléctrica</option>
-                <option value="Ingeniería Mecánica">Ingeniería Mecánica</option>
-                <option value="Ingeniería Química">Ingeniería Química</option>
-                <option value="Ingeniería en Sistemas de Información">Ingeniería en Sistemas de Información</option>
-                <option value="Secretaría de Asuntos Universitarios">Secretaría de Asuntos Universitarios</option>
-                <option value="Ingreso">Ingreso</option>
-            </select>
+    <!-- Contenedor de áreas -->
+    <section id="areasSection" class="card-container">
+        <h2>Áreas / Departamentos</h2>
+        <div id="areas"></div>
+    </section>
 
-            <select id="charla" name="charla" disabled>
-                <option value="">Seleccione una charla</option>
-            </select>
-
-            <select id="horario" name="horario">
-                <option value="">Seleccione un horario</option>
-            </select>
-
-            <button type="button" onclick="filtrarCharlas()">Buscar</button>
-        </form>
-    </div>
-
-    <!-- Resultados -->
-    <div id="results">
-        <h2>Charlas Disponibles</h2>
-        <div id="charlasContainer">
-            <!-- Aquí se inyectarán las tarjetas por JS -->
-        </div>
-    </div>
+    <!-- Contenedor de charlas -->
+    <section id="charlasSection" class="card-container hidden">
+        <h2>Charlas</h2>
+        <div id="charlas"></div>
+    </section>
 
     <footer>
         <p>© UTN - Charlas Abiertas</p>
