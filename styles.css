@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Hero con fondo */
+/* Hero */
 .hero {
     position: relative;
     text-align: center;
@@ -20,7 +20,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 64, 128, 0.7); /* capa azul semitransparente */
+    background: rgba(0, 64, 128, 0.7);
 }
 .hero-overlay {
     position: relative;
@@ -33,12 +33,12 @@ body {
 }
 .hero h1 {
     margin: 0;
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: 600;
 }
 .hero p {
     margin-top: 12px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     opacity: 0.95;
 }
 
@@ -51,25 +51,23 @@ body {
     margin: 30px auto;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #004080;
-}
-select, button {
+label, select, button {
     width: 100%;
+    margin-bottom: 15px;
+}
+select {
     padding: 12px;
-    margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 1em;
 }
 button {
-    background: linear-gradient(135deg, #007bb5, #0057b7);
-    color: white;
-    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
     border: none;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #007bb5, #0057b7);
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -80,46 +78,57 @@ button:hover {
 
 /* Resultados */
 #results {
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 30px auto;
     max-width: 1100px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 30px auto;
 }
 #results h2 {
-    margin-top: 0;
     color: #004080;
-}
-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-th {
-    background: #007bb5;
-    color: white;
-    padding: 12px;
-    text-align: left;
-}
-td {
-    padding: 12px;
-    border-bottom: 1px solid #eee;
-}
-tr:hover td {
-    background: #f1f8ff;
+    margin-bottom: 20px;
 }
 
-/* Texto de ayuda */
-.info-text {
-    display: block;
-    font-size: 0.9em;
-    color: #555;
+/* Tarjetas por área */
+.area-section {
+    margin-bottom: 25px;
+}
+.area-title {
+    background: #1E3A8A;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-weight: 600;
     margin-bottom: 15px;
-    background-color: #e7f3ff;
-    padding: 10px;
-    border-left: 4px solid #004080;
-    border-radius: 6px;
+}
+
+/* Tarjeta de charla */
+.charla-card {
+    background: #f0f6ff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+.charla-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.charla-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.charla-title {
+    font-weight: 600;
+    color: #1E3A8A;
+}
+.charla-horario {
+    font-weight: 500;
+    color: #3B82F6;
+}
+.charla-details {
+    display: none;
+    margin-top: 10px;
+    color: #333;
 }
 
 /* Footer */
@@ -132,39 +141,16 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsive: tabla como tarjetas */
-@media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
+/* Responsive */
+@media(max-width: 600px){
+    .charla-card {
+        padding: 12px 15px;
     }
-
-    thead {
-        display: none;
+    .charla-title {
+        font-size: 1em;
     }
-
-    tr {
-        background: #f9f9f9;
-        margin-bottom: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        padding: 12px;
-    }
-
-    td {
-        border: none;
-        display: flex;
-        justify-content: space-between;
-        padding: 8px 0;
-    }
-
-    td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        color: #004080;
-        flex-basis: 40%;
-        text-align: left;
+    .charla-horario {
+        font-size: 0.9em;
     }
 }
-
-
 
