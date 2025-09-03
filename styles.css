@@ -80,7 +80,8 @@ body {
   transition: all 0.3s ease;
   border-left: 6px solid transparent;
 }
-.card:hover {
+.card:hover,
+.card:active { /* hover en PC y active en móvil */
   transform: translateY(-5px) scale(1.01);
   box-shadow: 0 10px 22px rgba(0,0,0,0.18);
   border-left: 6px solid #007bb5;
@@ -99,14 +100,18 @@ body {
 
 /* Charla expandible */
 .card .details {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  margin-top: 0;
+}
+.card.expanded .details {
+  max-height: 500px; /* suficiente para texto */
+  opacity: 1;
   margin-top: 10px;
   padding-top: 8px;
   border-top: 1px solid #eee;
-  animation: fadeIn 0.5s ease;
-}
-.card.expanded .details {
-  display: block;
 }
 
 /* Footer */
@@ -125,10 +130,13 @@ footer {
 
 /* Responsive */
 @media(max-width: 600px){
+  /* Hero sin animación para ahorrar batería */
+  .hero {
+    background: linear-gradient(135deg, #004080, #007bb5);
+    animation: none;
+  }
   .card { padding: 14px; }
   .hero h1 { font-size: 1.9em; }
   .hero p { font-size: 1.05em; }
 }
-
-
 
