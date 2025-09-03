@@ -1,110 +1,110 @@
+/* Fuente moderna */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: linear-gradient(180deg, #e6f0ff 0%, #f9f9f9 100%);
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #e6f0ff 0%, #f9f9f9 100%);
+  color: #333;
 }
 
-/* Hero */
+/* Hero con fondo */
 .hero {
-    position: relative;
-    text-align: center;
-    padding: 80px 20px;
-    background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
-    color: white;
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
+  color: white;
 }
 .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 64, 128, 0.7);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 64, 128, 0.7);
 }
 .hero-overlay {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .hero img {
-    max-height: 90px;
-    margin-bottom: 15px;
-    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+  max-height: 90px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
 }
 .hero h1 {
-    margin: 0;
-    font-size: 2.8em;
-    font-weight: 600;
+  margin: 0;
+  font-size: 2.4em;
+  font-weight: 600;
 }
 .hero p {
-    margin-top: 12px;
-    font-size: 1.3em;
-    opacity: 0.95;
+  margin-top: 12px;
+  font-size: 1.2em;
+  opacity: 0.95;
 }
 
-/* Contenedores de tarjetas */
+/* Contenedores */
 .card-container {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
 }
-.card-container h2 {
-    color: #004080;
-    margin-bottom: 15px;
+.hidden {
+  display: none;
 }
 
-/* Tarjetas */
+/* Tarjetas principales */
 .card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: 0.3s ease;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 .card h3 {
-    margin: 0 0 10px;
-    color: #0057b7;
-}
-.card p {
-    margin: 0;
-    color: #333;
+  margin-top: 0;
+  color: #004080;
 }
 
-/* Detalles de la charla */
-.card-details {
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-    display: none;
-    color: #004080;
+/* Sub-tarjetas (horarios) */
+.sub-card {
+  background: #e7f3ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0 0 0;
+  transition: 0.2s ease;
 }
-
-/* Oculto por defecto */
-.hidden {
-    display: none;
+.sub-card:hover {
+  background: #cfe3ff;
+}
+.sub-card p {
+  margin: 4px 0;
+  font-size: 0.95em;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #004080;
-    color: white;
-    font-size: 0.9em;
-    margin-top: 40px;
+  text-align: center;
+  padding: 15px;
+  background: #004080;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 40px;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-    .card {
-        margin: 10px 0;
-        padding: 15px;
-    }
+  .card {
+    padding: 15px;
+  }
+  .sub-card {
+    font-size: 0.9em;
+  }
 }
 
 
