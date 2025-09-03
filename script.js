@@ -112,7 +112,7 @@ const charlas = [
         horario: "15:00 - Repetición: 16:00",
         aula: "303",
         descripcion: "Un acercamiento a cómo la IA está moldeando la tecnología y el mundo que viene.",
-    },
+    }
 ];
 
 // =============================
@@ -177,4 +177,5 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
