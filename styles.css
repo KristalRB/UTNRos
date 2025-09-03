@@ -1,97 +1,113 @@
-// =============================
-// Datos de charlas
-// =============================
-const charlas = [
-  {
-    area: "Ingeniería en Sistemas de Información",
-    charla: "Introducción a la Inteligencia Artificial",
-    horario: "10:00",
-    aula: "Lab 3",
-    descripcion: "Exploramos los conceptos básicos de IA y sus aplicaciones."
-  },
-  {
-    area: "Ingeniería en Sistemas de Información",
-    charla: "Introducción a la Inteligencia Artificial",
-    horario: "14:00",
-    aula: "Lab 2",
-    descripcion: "Repetición para otro grupo de estudiantes."
-  },
-  {
-    area: "Ingeniería Mecánica",
-    charla: "Diseño de Máquinas",
-    horario: "09:00",
-    aula: "Aula Magna",
-    descripcion: "Charla sobre fundamentos de diseño y simulaciones mecánicas."
-  },
-  {
-    area: "Ingeniería Química",
-    charla: "Energías Renovables",
-    horario: "11:00",
-    aula: "Sala Q1",
-    descripcion: "Cómo la ingeniería química aporta a la transición energética."
-  }
-];
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-// =============================
-// Referencias al DOM
-// =============================
-const areasSection = document.getElementById('areas');
-const charlasSection = document.getElementById('charlasSection');
-const charlasDiv = document.getElementById('charlas');
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #e6f0ff 0%, #f9f9f9 100%);
+  color: #333;
+}
 
-// =============================
-// Crear tarjetas de ÁREAS
-// =============================
-const areasUnicas = [...new Set(charlas.map(c => c.area))];
-areasUnicas.forEach(area => {
-  const card = document.createElement('div');
-  card.className = 'card';
-  card.textContent = area;
-  card.addEventListener('click', () => mostrarCharlas(area));
-  areasSection.appendChild(card);
-});
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
+  color: white;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 64, 128, 0.7);
+}
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+}
+.hero img {
+  max-height: 90px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2.4em;
+  font-weight: 600;
+}
+.hero p {
+  margin-top: 12px;
+  font-size: 1.2em;
+  opacity: 0.95;
+}
 
-// =============================
-// Mostrar CHARLAS por área
-// =============================
-function mostrarCharlas(area) {
-  charlasDiv.innerHTML = '';
-  charlasSection.classList.remove('hidden');
+/* Secciones de tarjetas */
+.card-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+.card-container h2 {
+  color: #004080;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
-  const charlasFiltradas = charlas.filter(c => c.area === area);
+/* Tarjetas */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #007bb5;
+}
+.card p {
+  margin: 4px 0;
+  font-size: 0.95em;
+  color: #333;
+}
 
-  // Agrupar charlas por nombre
-  const mapaCharlas = {};
-  charlasFiltradas.forEach(c => {
-    if (!mapaCharlas[c.charla]) mapaCharlas[c.charla] = [];
-    mapaCharlas[c.charla].push(c);
-  });
+/* Charla expandible */
+.card .details {
+  display: none;
+  margin-top: 8px;
+}
+.card.expanded .details {
+  display: block;
+}
 
-  // Crear tarjeta para cada charla
-  Object.keys(mapaCharlas).forEach(nombre => {
-    const card = document.createElement('div');
-    card.className = 'card';
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004080;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
 
-    const title = document.createElement('h3');
-    title.textContent = nombre;
-    card.appendChild(title);
+/* Hidden class */
+.hidden { display: none; }
 
-    // Sub-tarjetas por cada HORARIO de esa charla
-    mapaCharlas[nombre].forEach(c => {
-      const subCard = document.createElement('div');
-      subCard.className = 'sub-card';
-      subCard.innerHTML = `
-        <p><strong>Horario:</strong> ${c.horario || 'No definido'}</p>
-        <p><strong>Aula:</strong> ${c.aula || 'No definida'}</p>
-        <p><strong>Descripción:</strong> ${c.descripcion || 'Sin descripción'}</p>
-      `;
-      card.appendChild(subCard);
-    });
-
-    charlasDiv.appendChild(card);
-  });
+/* Responsive */
+@media(max-width: 600px){
+  .card { padding: 12px; }
+  .hero h1 { font-size: 1.8em; }
+  .hero p { font-size: 1em; }
+}
 
   // Scroll suave hacia la sección de charlas
   charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
