@@ -1,4 +1,3 @@
-/* Fuente moderna */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -33,102 +32,61 @@ body {
 }
 .hero h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: 600;
 }
 .hero p {
     margin-top: 12px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     opacity: 0.95;
 }
 
-/* Formulario */
-.filter-form {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    max-width: 700px;
+/* Contenedores de tarjetas */
+.card-container {
+    max-width: 1000px;
     margin: 30px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 0 20px;
 }
-label, select, button {
-    width: 100%;
-    margin-bottom: 15px;
-}
-select {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-}
-button {
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(135deg, #007bb5, #0057b7);
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Resultados */
-#results {
-    max-width: 1100px;
-    margin: 30px auto;
-}
-#results h2 {
+.card-container h2 {
     color: #004080;
-    margin-bottom: 20px;
-}
-
-/* Tarjetas por área */
-.area-section {
-    margin-bottom: 25px;
-}
-.area-title {
-    background: #1E3A8A;
-    color: white;
-    padding: 12px 15px;
-    border-radius: 8px;
-    font-weight: 600;
     margin-bottom: 15px;
 }
 
-/* Tarjeta de charla */
-.charla-card {
-    background: #f0f6ff;
+/* Tarjetas */
+.card {
+    background: white;
     border-radius: 12px;
-    padding: 15px 20px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
     transition: 0.3s ease;
 }
-.charla-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
-.charla-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+.card h3 {
+    margin: 0 0 10px;
+    color: #0057b7;
 }
-.charla-title {
-    font-weight: 600;
-    color: #1E3A8A;
-}
-.charla-horario {
-    font-weight: 500;
-    color: #3B82F6;
-}
-.charla-details {
-    display: none;
-    margin-top: 10px;
+.card p {
+    margin: 0;
     color: #333;
+}
+
+/* Detalles de la charla */
+.card-details {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    display: none;
+    color: #004080;
+}
+
+/* Oculto por defecto */
+.hidden {
+    display: none;
 }
 
 /* Footer */
@@ -142,15 +100,11 @@ footer {
 }
 
 /* Responsive */
-@media(max-width: 600px){
-    .charla-card {
-        padding: 12px 15px;
-    }
-    .charla-title {
-        font-size: 1em;
-    }
-    .charla-horario {
-        font-size: 0.9em;
+@media (max-width: 600px) {
+    .card {
+        margin: 10px 0;
+        padding: 15px;
     }
 }
+
 
