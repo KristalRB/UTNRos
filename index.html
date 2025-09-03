@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlas - UTN</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlas - UTN</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Hero con logo y título -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/UTN_logo.svg/512px-UTN_logo.svg.png" alt="UTN Logo">
+      <h1>LA UNIVERSIDAD ABRE SUS PUERTAS - EDICIÓN 2025</h1>
+      <p>Explorá charlas, actividades y muestras</p>
+    </div>
+  </header>
 
-    <!-- Hero con logo y título -->
-    <header class="hero">
-        <div class="hero-overlay">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/UTN_logo.svg/512px-UTN_logo.svg.png" alt="UTN Logo">
-            <h1>La Universidad Abre Sus Puertas</h1>
-            <p>Explorá charlas, actividades y muestras</p>
-        </div>
-    </header>
+  <!-- Sección de Áreas -->
+  <section id="areas" class="card-container">
+    <h2>Seleccioná un área</h2>
+  </section>
 
-    <!-- Contenedor de áreas -->
-    <section id="areasSection" class="card-container">
-        <h2>Áreas / Departamentos</h2>
-        <div id="areas"></div>
-    </section>
+  <!-- Sección de Charlas -->
+  <section id="charlasSection" class="card-container hidden">
+    <h2>Charlas</h2>
+    <div id="charlas"></div>
+  </section>
 
-    <!-- Contenedor de charlas -->
-    <section id="charlasSection" class="card-container hidden">
-        <h2>Charlas</h2>
-        <div id="charlas"></div>
-    </section>
+  <footer>
+    <p>© UTN - Charlas</p>
+  </footer>
 
-    <footer>
-        <p>© UTN - Charlas Abiertas</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
