@@ -10,7 +10,7 @@ const charlas = [
     {
         area: "Ingreso",
         charla: "Entre el Ingenio y las Matemáticas.",
-        horario: "14:30 - Repetición: 16:00" ,
+        horario: "15:00 - Repetición: 16:00" ,
         aula: "210 (2do Piso)",
         descripcion: "Un espacio donde el ingenio y el trabajo en equipo hacen que las matemáticas sean un juego.",
     },
@@ -24,7 +24,7 @@ const charlas = [
      {
         area: "Ingreso",
         charla: "Arduinos",
-        horario: "15:00 - Repetición: 15:30 - Repetición: 16:30" ,
+        horario: "14:30 - Repetición: 15:30 - Repetición: 16:30" ,
         aula: "210 (2do Piso)",
         descripcion: "Tablero de juegos, Simón dice.",
     },
@@ -254,6 +254,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
