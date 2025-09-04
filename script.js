@@ -11,7 +11,7 @@ const charlas = [
         area: "Ingreso",
         charla: "Entre el Ingenio y las Matemáticas.",
         horario: "14:30 - Repetición: 16:00" ,
-        aula: "210",
+        aula: "210 (2do Piso)",
         descripcion: "Un espacio donde el ingenio y el trabajo en equipo hacen que las matemáticas sean un juego.",
     },
      {
@@ -25,7 +25,7 @@ const charlas = [
         area: "Ingreso",
         charla: "Arduinos",
         horario: "15:00 - Repetición: 15:30 - Repetición: 16:30" ,
-        aula: "210",
+        aula: "210 (2do Piso)",
         descripcion: "Tablero de juegos, Simón dice.",
     },
        {
@@ -117,56 +117,56 @@ const charlas = [
         area:"Ingeniería Mecánica",
         charla:"Perfil del Profesional de Ingeniería Mecánica",
         horario: "14:30",
-        aula: "309",
+        aula: "309 (3er Piso)",
         descripcion: "Presentación de la carrera de Ingeniería Mecánica. Características generales del cursado y de la actividad profesional Perfil del profesional de la Ingeniería en Mecánica. Actividades reservadas.Título intermedio.",
     },
     {
         area:"Ingeniería Mecánica",
         charla:"Diseño de máquinas",
         horario: "15:00",
-        aula: "309",
+        aula: "309 (3er Piso)",
         descripcion: "Un primer acercamiento al proceso de imaginar, proyectar y construir sistemas mecánicos funcionales.",
     },     
     {
         area:"Ingeniería Mecánica",
         charla:"Industria 4.0",
         horario: "15:30",
-        aula: "309",
+        aula: "309 (3er Piso)",
         descripcion: "Conocé cómo la tecnología está transformando la industria: automatización, datos y conectividad en acción.",
     }, 
     {
         area:"Ingeniería Mecánica",
         charla:"La Ingeniería Mecánica en el Agro",
         horario: "16:00",
-        aula: "309",
+        aula: "309 (3er Piso)",
         descripcion: "Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.",
     }, 
     {
         area:"Ingeniería Mecánica",
         charla:"Cadena de valor de la Ingeniería Mecánica",
         horario: "16:30",
-        aula: "309",
+        aula: "309 (3er Piso)",
         descripcion: "Descripción de todas las actividades y procesos involucrados en la creación de productos mecánicos, desde la concepción hasta la entrega final al cliente. Actividades reservadas.",
     }, 
      {
         area:"Ingeniería Mecánica",
         charla:"La Ingeniería Mecánica a través del microscopio",
         horario: "16:00 - Repetición: 16:30",
-        aula: "Lab. de metalografia ",
+        aula: "Lab. de metalografia (2do Piso)",
         descripcion: "",
     }, 
     {
         area: "Ingeniería en Sistemas de Información",
         charla: "Estudiando Ingeniería en Sistemas ¿qué estudiamos cuándo estudiamos ingeniería en sistemas?¿para qué estudiamos?",
         horario: "14:30 - Repetición: 15:30 - Repetición: 16:30",
-        aula: "303",
+        aula: "303 (3er Piso)",
         descripcion: " Presentación de la carrera de Ingeniería en sistemas de información. Características generales del cursado y de la actividad del profesional de la ingeniería en sistemas de Información. Actividades reservadas.Título intermedio. Experiencia laboral personal",
     },
      {
         area: "Ingeniería en Sistemas de Información",
         charla: "IA, presente y futuro",
         horario: "15:00 - Repetición: 16:00",
-        aula: "303",
+        aula: "303 (3er Piso)",
         descripcion: "Un acercamiento a cómo la IA está moldeando la tecnología y el mundo que viene.",
     },
      {
@@ -180,7 +180,7 @@ const charlas = [
         area: "Ingeniería en Sistemas de Información",
         charla: "Detrás de Escena: El Analista en los Proyectos",
         horario: "16:00 - Repetición: 16:30",
-        aula: "211",
+        aula: "211 (2do Piso)",
         descripcion: "Exploraremos el rol del analista en los proyectos. Descubriremos cómo este profesional actúa como el puente entre los requisitos del cliente y las soluciones tecnológicas, asegurando que cada aspecto del proyecto se alinee con los objetivos.",
     },
 ];
@@ -247,6 +247,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
