@@ -136,7 +136,7 @@ const charlas = [
     }, 
     {
         area:"Ingeniería Mecánica",
-        charla:"La Ingeniería Mecánica en el Agro",
+        charla:"Ingeniería Mecánica, del aula al campo de aplicación",
         horario: "16:00",
         aula: "309 (3er Piso)",
         descripcion: "Aplicación de la mecánica en el desarrollo de la maquinaria agrícola.",
@@ -247,6 +247,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
