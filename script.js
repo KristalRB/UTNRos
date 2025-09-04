@@ -36,6 +36,13 @@ const charlas = [
         descripcion: "",
     },
      {
+        area: "Secretaría de Asuntos Universitarios",
+        charla: "Mujeres que Ingenian",
+        horario: "15:30" ,
+        aula: "SUM",
+        descripcion: "",
+    },
+     {
         area: "Centro de Estudiantes - CEUTN",
         charla: "¿Cómo sobrevivir a la universidad y no morir en el intento?",
         horario: "15:00 - Repetición: 16:00" ,
@@ -247,6 +254,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
