@@ -1,18 +1,74 @@
 // =============================
 const charlas = [
     {
+        area: "Ingreso",
+        charla: "Charla informativa acerca del curso de ingreso.",
+        horario: "14:30 - Repetición: 15:30 - Repetición: 16:30" ,
+        aula: "Anfiteatro (4to Piso)",
+        descripcion: "",
+    },
+    {
+        area: "Ingreso",
+        charla: "Entre el Ingenio y las Matemáticas.",
+        horario: "14:30 - Repetición: 16:00" ,
+        aula: "210",
+        descripcion: "Un espacio donde el ingenio y el trabajo en equipo hacen que las matemáticas sean un juego.",
+    },
+     {
+        area: "Ingreso",
+        charla: "Test Vocacional",
+        horario: "14:30 - Repetición: 15:00 - Repetición: 15:30" ,
+        aula: "Anfiteatro (4to Piso)",
+        descripcion: "Estudiantes de Ingenieria en Sistemas programaron el Test del doctor Holland, denominado Test Chaside  que consta de 98 preguntas enfocadas a identificar tus intereses y aptitudes para la selección de una vocación. ",
+    },
+     {
+        area: "Ingreso",
+        charla: "Arduinos",
+        horario: "15:00 - Repetición: 15:30 - Repetición: 16:30" ,
+        aula: "210",
+        descripcion: "Tablero de juegos, Simón dice.",
+    },
+       {
+        area: "Ingreso",
+        charla: "Impresión 3D",
+        horario: "15:00 - Repetición: 15:30" ,
+        aula: "1er Piso",
+        descripcion: "",
+    },
+     {
+        area: "Centro de Estudiantes - CEUTN",
+        charla: "¿Cómo sobrevivir a la universidad y no morir en el intento?",
+        horario: "15:00 - Repetición: 16:00" ,
+        aula: "Anfiteatro (4to Piso)",
+        descripcion: "",
+    },
+    {
         area: "Básicas",
         charla: "La Física en Ingeniería",
         horario: "14:30 - Repetición: 15:00" ,
-        aula: "Lab Física 1 (4to Piso)",
+        aula: "Lab Física I (4to Piso)",
         descripcion: "Una mirada al papel esencial de la física en el pensamiento y la práctica ingenieril.",
     },
      {
         area: "Básicas",
         charla: "Ánalisis de Fenómenos Ópticos",
         horario: "15:30 - Repetición: 16:00 - Repetición: 16:30" ,
-        aula: "Lab Física 1 (4to Piso)",
+        aula: "Lab Física I (4to Piso)",
         descripcion: "Experimento en el Laboratorio de Física I de Óptica Geométrica. Estudio de la Reflexión y refracción de la luz en superficies planas y curvas.",
+    },
+    {
+        area: "Básicas",
+        charla: "Generador de Van de Graaff",
+        horario: "15:00 - Repetición: 16:00" ,
+        aula: "Lab Física II (4to Piso)",
+        descripcion: "Experiencia en el Laboratorio de Física II.",
+    },
+      {
+        area: "Básicas",
+        charla: "Visualización de Carga y descarga de un capacitor",
+        horario: "15:30 - Repetición: 16:30" ,
+        aula: "Lab Física II (4to Piso)",
+        descripcion: "Experiencia en el Laboratorio de Física II.",
     },
     {
         area: "Ingeniería en Energía Eléctrica",
@@ -113,6 +169,20 @@ const charlas = [
         aula: "303",
         descripcion: "Un acercamiento a cómo la IA está moldeando la tecnología y el mundo que viene.",
     },
+     {
+        area: "Ingeniería en Sistemas de Información",
+        charla: "Manos que construyen futuro",
+        horario: "15:00 - Repetición: 16:00",
+        aula: "SUM",
+        descripcion: "Una mirada cercana a cómo la ingeniería y el diseño pueden devolver oportunidades. Descubrí cómo un proyecto universitario se transforma en algo real, útil y humano.",
+    },
+     {
+        area: "Ingeniería en Sistemas de Información",
+        charla: "Detrás de Escena: El Analista en los Proyectos",
+        horario: "16:00 - Repetición: 16:30",
+        aula: "211",
+        descripcion: "Exploraremos el rol del analista en los proyectos. Descubriremos cómo este profesional actúa como el puente entre los requisitos del cliente y las soluciones tecnológicas, asegurando que cada aspecto del proyecto se alinee con los objetivos.",
+    },
 ];
 
 // =============================
@@ -143,14 +213,14 @@ function mostrarCharlas(area) {
 
     const charlasFiltradas = charlas.filter(c => c.area === area);
 
-    // Agrupar charlas por nombre
+    // Agrupa
     const mapaCharlas = {};
     charlasFiltradas.forEach(c => {
         if (!mapaCharlas[c.charla]) mapaCharlas[c.charla] = [];
         mapaCharlas[c.charla].push(c);
     });
 
-    // Crear tarjeta para cada charla
+  
     Object.keys(mapaCharlas).forEach(nombre => {
         const card = document.createElement('div');
         card.className = 'card';
@@ -177,6 +247,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
