@@ -46,15 +46,15 @@ const charlas = [
         area: "Ingeniería Civil",
         charla:"Lab. de Hidráulica",
         horario: "15:30 - Repetición: 16:30",
-        aula: "Planta Piloto (enfrente de la facultad)",
+        aula: "Anexo I (enfrente de la facultad)",
         descripcion: "Muestra canal hidráulico",
     },
   {
         area:"Ingeniería Civil",
         charla:"Lab. de ensayos",
         horario: "15:00 - Repetición: 16:00",
-        aula: "Planta Piloto (enfrente de la facultad)",
-        descripcion: "Ensayo de tracción en barra de acero y en probeta de hormigón",
+        aula: "Anexo I (enfrente de la facultad)",
+        descripcion: "Ensayo de tracción en barra de acero y en probeta de hormigón.",
     },
 
  {
@@ -177,6 +177,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
