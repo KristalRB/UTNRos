@@ -68,7 +68,23 @@ body {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* Desktop por defecto */
+.bienvenida-desktop {
+  display: block;
+}
+.bienvenida-mobile {
+  display: none;
+}
 
+/* Mobile: menos de 600px */
+@media (max-width: 600px) {
+  .bienvenida-desktop {
+    display: none;
+  }
+  .bienvenida-mobile {
+    display: block;
+  }
+}
 /* Tarjetas */
 .card {
   background: white;
@@ -139,4 +155,5 @@ footer {
   .hero h1 { font-size: 1.9em; }
   .hero p { font-size: 1.05em; }
 }
+
 
