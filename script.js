@@ -18,7 +18,7 @@ const charlas = [
         area: "Ingreso",
         charla: "Test Vocacional",
         horario: "14:30 - Repetición: 15:00 - Repetición: 15:30" ,
-        aula: "Anfiteatro (4to Piso)",
+        aula: "211 (2do Piso)",
         descripcion: "Estudiantes de Ingenieria en Sistemas programaron el Test del doctor Holland, denominado Test Chaside  que consta de 98 preguntas enfocadas a identificar tus intereses y aptitudes para la selección de una vocación. ",
     },
      {
@@ -254,6 +254,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
