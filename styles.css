@@ -68,21 +68,72 @@ body {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-/* Desktop por defecto */
-.bienvenida-desktop {
-  display: block;
-}
-.bienvenida-mobile {
-  display: none;
+/* Bienvenida */
+.bienvenida {
+  background: linear-gradient(135deg, #007bb5, #0057b7); /* tonos azules */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 950px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  animation: fadeIn 1.2s ease;
 }
 
-/* Mobile: menos de 600px */
-@media (max-width: 600px) {
-  .bienvenida-desktop {
-    display: none;
+.bienvenida h2 {
+  margin: 0 0 15px 0;
+  font-size: 2.2em;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+.bienvenida p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  line-height: 1.6;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+/* Efecto hover sutil */
+.bienvenida:hover {
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .bienvenida {
+    padding: 35px 18px;
+    margin: 25px 15px;
+    border-radius: 12px;
   }
-  .bienvenida-mobile {
-    display: block;
+
+  .bienvenida h2 {
+    font-size: 1.6em;
+  }
+
+  .bienvenida p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .bienvenida {
+    padding: 25px 15px;
+  }
+
+  .bienvenida h2 {
+    font-size: 1.4em;
+  }
+
+  .bienvenida p {
+    font-size: 0.95em;
   }
 }
 /* Tarjetas */
@@ -155,5 +206,6 @@ footer {
   .hero h1 { font-size: 1.9em; }
   .hero p { font-size: 1.05em; }
 }
+
 
 
