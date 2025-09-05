@@ -96,7 +96,7 @@ const charlas = [
         charla:"Ingeniería Química ¿es lo que parece?",
         horario: "14:30 - Repetición: 15:30 - Repetición: 16:30",
         aula: "308 (3er Piso)",
-        descripcion: "Presentación de la carrera de ingeniería química, características generales del cursado y de la actividad profesional. Sabremos si hay diferencias entre ingenieros/as químicos/as y licenciados/as químicos/as y se brindarán más detalles sobre las funciones principales de los/as ingenieros/as químicos/as.¿Cómo se hace una reacción química? La química es la ciencia natural que estudia la composición, estructura y propiedades de la materia, así como también los cambios que esta experimenta durante las reacciones. Veremos un ejemplo de un cambio químico y como detectamos que la sustancia ha sufrido una modificación.",
+        descripcion:"Presentación de la carrera de ingeniería química, características generales del cursado y de la actividad profesional.",
     },
   {
         area: "Ingeniería Civil",
@@ -261,6 +261,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
