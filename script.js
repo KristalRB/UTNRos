@@ -190,6 +190,13 @@ const charlas = [
         aula: "211 (2do Piso)",
         descripcion: "Exploraremos el rol del analista en los proyectos. Descubriremos cómo este profesional actúa como el puente entre los requisitos del cliente y las soluciones tecnológicas, asegurando que cada aspecto del proyecto se alinee con los objetivos.",
     },
+    {
+        area: "Ingeniería en Sistemas de Información",
+        charla: "Nuestra experiencia: Ingeniería en Sistemas de Información",
+        horario: "16:30",
+        aula: "SUM",
+        descripcion: "",
+    },
 ];
 
 // =============================
@@ -254,6 +261,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
