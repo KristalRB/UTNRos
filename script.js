@@ -167,7 +167,7 @@ const charlas = [
         charla: "Estudiando Ingeniería en Sistemas ¿qué estudiamos cuándo estudiamos ingeniería en sistemas?¿para qué estudiamos?",
         horario: "14:30 - Repetición: 15:30 - Repetición: 16:30",
         aula: "303 (3er Piso)",
-        descripcion: " Presentación de la carrera de Ingeniería en sistemas de información. Características generales del cursado y de la actividad del profesional de la ingeniería en sistemas de Información. Actividades reservadas.Título intermedio. Experiencia laboral personal",
+        descripcion: "Presentación de la carrera de Ingeniería en sistemas de información. Características generales del cursado y de la actividad del profesional de la ingeniería en sistemas de Información. Actividades reservadas.Título intermedio. Experiencia laboral personal",
     },
      {
         area: "Ingeniería en Sistemas de Información",
@@ -195,7 +195,7 @@ const charlas = [
         charla: "Nuestra experiencia: Ingeniería en Sistemas de Información",
         horario: "16:30",
         aula: "SUM",
-        descripcion: "",
+        descripcion: "Presentación de la carrera de Ingeniería en sistemas de información. Características generales del cursado y de la actividad del profesional de la ingeniería en sistemas de Información. Actividades reservadas.Título intermedio.",
     },
 ];
 
@@ -261,6 +261,7 @@ function mostrarCharlas(area) {
     // Scroll suave hacia la sección de charlas
     charlasSection.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 
