@@ -398,3 +398,49 @@ footer p { margin: 5px 0; }
   .card-container h2 { font-size: 1.95rem; }
   .card { padding: 15px 16px; }
 }
+
+/* =========================
+   Iconos SVG del evento
+   ========================= */
+.event-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .25s ease;
+}
+
+.hero-button:hover svg {
+  transform: translateY(2px);
+}
+
+.footer-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.footer-location svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: var(--aqua);
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}

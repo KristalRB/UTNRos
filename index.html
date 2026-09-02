@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#062c63">
-  <title>Charlas - UTN | La Universidad abre sus puertas</title>
+  <title>Charlas y actividades - UTN | La Universidad abre sus puertas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Hero actualizado a partir de la identidad visual de la invitación 2026 -->
+  <!-- Hero inspirado en la identidad visual de la invitación 2026 -->
   <header class="hero">
     <div class="hero-decoration hero-decoration-top" aria-hidden="true"></div>
     <div class="hero-decoration hero-decoration-bottom" aria-hidden="true"></div>
@@ -27,20 +27,52 @@
 
         <div class="event-data" aria-label="Información del evento">
           <div class="event-item">
-            <span class="event-icon" aria-hidden="true">▣</span>
-            <div><small>FECHA</small><b>4 DE SEPTIEMBRE</b><span>DE 2026</span></div>
+            <span class="event-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M7 3v3M17 3v3M4.5 9.5h15M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>
+              </svg>
+            </span>
+            <div>
+              <small>FECHA</small>
+              <b>4 DE SEPTIEMBRE</b>
+              <span>DE 2026</span>
+            </div>
           </div>
+
           <div class="event-item">
-            <span class="event-icon" aria-hidden="true">◷</span>
-            <div><small>HORARIO</small><b>15:00 H</b></div>
+            <span class="event-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <circle cx="12" cy="12" r="8.5"/>
+                <path d="M12 7.5V12l3.2 2"/>
+              </svg>
+            </span>
+            <div>
+              <small>HORARIO</small>
+              <b>15:00 H</b>
+            </div>
           </div>
+
           <div class="event-item">
-            <span class="event-icon" aria-hidden="true">●</span>
-            <div><small>LUGAR</small><b>ZEBALLOS 1341</b><span>ROSARIO</span></div>
+            <span class="event-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/>
+                <circle cx="12" cy="10" r="2.2"/>
+              </svg>
+            </span>
+            <div>
+              <small>LUGAR</small>
+              <b>ZEBALLOS 1341</b>
+              <span>ROSARIO</span>
+            </div>
           </div>
         </div>
 
-        <a class="hero-button" href="#areas">VER CHARLAS <span aria-hidden="true">↓</span></a>
+        <a class="hero-button" href="#areas">
+          VER ACTIVIDADES
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 5v14M7 14l5 5 5-5"/>
+          </svg>
+        </a>
       </div>
 
       <div class="hero-photo-wrap" aria-hidden="true">
@@ -56,7 +88,6 @@
     </div>
   </header>
 
-  <!-- Sección de Bienvenida -->
   <section class="bienvenida">
     <span class="bienvenida-label">BIENVENIDOS</span>
     <h2>Organizá tu recorrido</h2>
@@ -65,20 +96,24 @@
     </p>
   </section>
 
-  <!-- Sección de Áreas -->
   <section id="areas" class="card-container">
     <h2>Seleccioná un área</h2>
   </section>
 
-  <!-- Sección de Charlas -->
   <section id="charlasSection" class="card-container hidden">
-    <h2>Charlas</h2>
+    <h2>Actividades</h2>
     <div id="charlas"></div>
   </section>
 
   <footer>
     <p>© UTN - Área Ingreso - Jornada: "La Universidad abre sus puertas."</p>
-    <p>📍 Zeballos 1341, Rosario, Santa Fe</p>
+    <p class="footer-location">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/>
+        <circle cx="12" cy="10" r="2.2"/>
+      </svg>
+      Zeballos 1341, Rosario, Santa Fe
+    </p>
   </footer>
 
   <script src="script.js"></script>
