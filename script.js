@@ -167,7 +167,7 @@ const actividades = [
   {
     "area": "Secretaría de Asuntos Universitarios",
     "charla": "Secretaría de Asuntos Universitarios: Becas, deportes, Bolsa de Trabajo, Pasantías y +",
-    "tipo": "Muestra",
+    "tipo": "Charla",
     "horario": "16:00",
     "aula": "1er piso",
     "descripcion": "Conocé los programas de becas y ayudas económicas, bolsa de trabajo, pasantías, actividades deportivas y propuestas de salud y bienestar para acompañarte durante toda tu vida universitaria."
