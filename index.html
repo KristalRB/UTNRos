@@ -3,29 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charlas - UTN 2025</title>
+  <meta name="theme-color" content="#062c63">
+  <title>Charlas - UTN | La Universidad abre sus puertas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Hero -->
+  <!-- Hero actualizado a partir de la identidad visual de la invitación 2026 -->
   <header class="hero">
-    <div class="hero-overlay">
-      <img src="area-ingreso.png" alt="UTN Logo">
-      <h1>LA UNIVERSIDAD ABRE SUS PUERTAS</h1>
-      <h1>- EDICIÓN 2025 - </h1>
-      <p>Explorá charlas, actividades y muestras</p>
+    <div class="hero-decoration hero-decoration-top" aria-hidden="true"></div>
+    <div class="hero-decoration hero-decoration-bottom" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <img class="utn-logo" src="assets/logo-utn-frro.png" alt="UTN - Facultad Regional Rosario">
+
+        <span class="hero-kicker">JORNADA</span>
+        <h1>
+          <span>LA UNIVERSIDAD</span>
+          <strong>ABRE SUS PUERTAS</strong>
+        </h1>
+        <p class="hero-copy">Explorá charlas, actividades y muestras. Conocé nuestra Facultad y acercate a las carreras que te interesan.</p>
+
+        <div class="event-data" aria-label="Información del evento">
+          <div class="event-item">
+            <span class="event-icon" aria-hidden="true">▣</span>
+            <div><small>FECHA</small><b>4 DE SEPTIEMBRE</b><span>DE 2026</span></div>
+          </div>
+          <div class="event-item">
+            <span class="event-icon" aria-hidden="true">◷</span>
+            <div><small>HORARIO</small><b>15:00 H</b></div>
+          </div>
+          <div class="event-item">
+            <span class="event-icon" aria-hidden="true">●</span>
+            <div><small>LUGAR</small><b>ZEBALLOS 1341</b><span>ROSARIO</span></div>
+          </div>
+        </div>
+
+        <a class="hero-button" href="#areas">VER CHARLAS <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <div class="hero-photo-wrap" aria-hidden="true">
+        <div class="photo-dots dots-one"></div>
+        <div class="photo-dots dots-two"></div>
+        <div class="hero-photo-frame">
+          <img src="assets/fachada-utn.jpg" alt="">
+        </div>
+        <span class="mini-square square-one"></span>
+        <span class="mini-square square-two"></span>
+        <span class="mini-square square-three"></span>
+      </div>
     </div>
   </header>
 
-<!-- Sección de Bienvenida -->
-<section class="bienvenida">
-  <h2> Bienvenidos</h2>
-  <p>
-    La actividad comenzará a las 14:00 h con una charla introductoria en varias aulas, donde se presentará la jornada y la información necesaria para aprovechar al máximo el evento. 
-  </p>
-</section>
-  
+  <!-- Sección de Bienvenida -->
+  <section class="bienvenida">
+    <span class="bienvenida-label">BIENVENIDOS</span>
+    <h2>Organizá tu recorrido</h2>
+    <p>
+      La jornada comenzará a las 15:00 h con la bienvenida y presentación general. A continuación, vas a poder recorrer las distintas charlas, actividades y muestras de la Facultad.
+    </p>
+  </section>
+
   <!-- Sección de Áreas -->
   <section id="areas" class="card-container">
     <h2>Seleccioná un área</h2>
@@ -39,22 +78,9 @@
 
   <footer>
     <p>© UTN - Área Ingreso - Jornada: "La Universidad abre sus puertas."</p>
-    <p>📍Zeballos 1341, Rosario, Santa Fe</p>
+    <p>📍 Zeballos 1341, Rosario, Santa Fe</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
