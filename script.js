@@ -235,8 +235,8 @@ function crearGrupo(titulo, items, tipoClase) {
     const meta = document.createElement('div');
     meta.className = 'activity-meta';
     meta.innerHTML = `
-      <div><span class="meta-label">Horario</span><strong>${item.horario}</strong></div>
-      <div><span class="meta-label">Lugar</span><strong>${item.aula || 'A confirmar'}</strong></div>
+      <p><strong>Horario:</strong> ${item.horario}</p>
+      <p><strong>Aula:</strong> ${item.aula || 'A confirmar'}</p>
     `;
     card.appendChild(meta);
 

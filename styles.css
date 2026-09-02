@@ -444,4 +444,154 @@ footer p { margin: 5px 0; }
   stroke-linejoin: round;
   flex: 0 0 auto;
 }
-\n\n/* ===== Correcciones 2026: iconos, áreas, charlas y muestras ===== */\n.event-icon svg, .hero-button svg, .footer-location svg { display: block; max-width: 100%; max-height: 100%; }\n.event-icon svg { width: 20px !important; height: 20px !important; fill: none !important; stroke: currentColor !important; }\n.hero-button svg { width: 18px !important; height: 18px !important; fill: none !important; stroke: currentColor !important; }\n.footer-location svg { width: 16px !important; height: 16px !important; fill: none !important; flex: 0 0 16px; }\n\n.area-card {\n  width: 100%;\n  font: inherit;\n  color: var(--text);\n  text-align: left;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 16px;\n}\n.area-card .area-arrow {\n  color: var(--teal-dark);\n  font-size: 1.35rem;\n  font-weight: 700;\n  transition: transform .22s ease;\n}\n.area-card:hover .area-arrow { transform: translateX(4px); }\n\n.activity-group { margin: 34px 0 46px; }\n.activity-group-title {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  margin: 0 0 14px;\n}\n.activity-group-title h3 {\n  margin: 0;\n  font-family: 'Barlow Condensed', sans-serif;\n  color: var(--navy);\n  font-size: 1.75rem;\n  letter-spacing: .025em;\n  text-transform: uppercase;\n}\n.group-mark {\n  width: 11px;\n  height: 11px;\n  border-radius: 3px;\n  background: var(--navy);\n  box-shadow: 17px 0 0 var(--teal);\n  margin-right: 17px;\n}\n.group-muestras .group-mark {\n  border-radius: 50%;\n  background: var(--teal);\n  box-shadow: 17px 0 0 var(--navy);\n}\n.activity-card { cursor: default; border-left-color: rgba(8,46,103,.1); }\n.activity-card:hover { transform: none; border-left-color: var(--teal); }\n.activity-card h4 {\n  margin: 0 0 14px;\n  color: var(--teal-dark);\n  font-size: 1.12rem;\n  line-height: 1.35;\n}\n.activity-meta {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 12px;\n  margin-bottom: 12px;\n}\n.activity-meta > div {\n  background: #f6fbfc;\n  border: 1px solid rgba(8,46,103,.07);\n  border-radius: 10px;\n  padding: 10px 12px;\n}\n.meta-label {\n  display: block;\n  color: var(--teal-dark);\n  font-size: .7rem;\n  font-weight: 700;\n  letter-spacing: .08em;\n  text-transform: uppercase;\n  margin-bottom: 3px;\n}\n.activity-meta strong { color: var(--navy); font-size: .93rem; }\n.activity-description { margin: 10px 0 0 !important; line-height: 1.6; color: #49637c !important; }\n\n@media (max-width: 650px) {\n  .activity-meta { grid-template-columns: 1fr; }\n  .activity-group-title h3 { font-size: 1.5rem; }\n  .area-card { min-height: 72px; }\n  footer { padding: 24px 18px; }\n  .footer-location { flex-wrap: nowrap; }\n}\n
+
+/* ===== Correcciones 2026: iconos, áreas, charlas y muestras ===== */
+.event-icon svg,
+.hero-button svg,
+.footer-location svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.event-icon svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: none !important;
+  stroke: currentColor !important;
+}
+
+.hero-button svg {
+  width: 18px !important;
+  height: 18px !important;
+  fill: none !important;
+  stroke: currentColor !important;
+}
+
+.footer-location svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: none !important;
+  flex: 0 0 16px;
+}
+
+/* Áreas: listado vertical como en la versión anterior */
+.area-card {
+  width: 100%;
+  min-height: 62px;
+  font: inherit;
+  color: var(--text);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 22px;
+  margin: 15px 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.area-card .area-arrow {
+  display: none;
+}
+
+/* Separación de Charlas y Muestras */
+.activity-group {
+  margin: 34px 0 46px;
+}
+
+.activity-group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.activity-group-title h3 {
+  margin: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--navy);
+  font-size: 1.75rem;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+}
+
+.group-mark {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  background: var(--navy);
+  box-shadow: 17px 0 0 var(--teal);
+  margin-right: 17px;
+}
+
+.group-muestras .group-mark {
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 17px 0 0 var(--navy);
+}
+
+.activity-card {
+  cursor: default;
+  border-left-color: rgba(8,46,103,.1);
+}
+
+.activity-card:hover {
+  transform: none;
+  border-left-color: var(--teal);
+}
+
+.activity-card h4 {
+  margin: 0 0 14px;
+  color: var(--teal-dark);
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+/* Horario y aula: formato simple, legible y con dos puntos */
+.activity-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0 0 12px;
+}
+
+.activity-meta p {
+  margin: 0;
+  color: #334e68;
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.activity-meta p strong {
+  color: var(--navy);
+  margin-right: 6px;
+}
+
+.activity-description {
+  margin: 12px 0 0 !important;
+  padding-top: 11px;
+  border-top: 1px solid rgba(8,46,103,.08);
+  line-height: 1.6;
+  color: #49637c !important;
+}
+
+@media (max-width: 650px) {
+  .area-card {
+    min-height: 64px;
+    padding: 16px 18px;
+    margin: 12px 0;
+  }
+
+  .activity-group-title h3 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    padding: 24px 18px;
+  }
+
+  .footer-location {
+    flex-wrap: nowrap;
+  }
+}
